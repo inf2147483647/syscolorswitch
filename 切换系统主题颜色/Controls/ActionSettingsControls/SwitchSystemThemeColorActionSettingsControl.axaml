@@ -1,0 +1,19 @@
+﻿<ci:ActionSettingsControlBase 
+    x:Class="切换系统主题颜色.Controls.ActionSettingsControls.SwitchSystemThemeColorActionSettingsControl"
+    x:TypeArguments="models:SwitchSystemThemeColorSettings"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ci="http://classisland.tech/schemas/xaml/core"
+    xmlns:fa="clr-namespace:FluentAvalonia.UI.Controls;assembly=FluentAvalonia"
+    xmlns:models="clr-namespace:切换系统主题颜色.Models;assembly=切换系统主题颜色"
+    xmlns:local="clr-namespace:切换系统主题颜色.Controls.ActionSettingsControls;assembly=切换系统主题颜色"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignInstance Type=local:SwitchSystemThemeColorActionSettingsControl}">
+    <StackPanel Spacing="8">
+        <TextBlock Text="选择要切换到的系统主题颜色:" Margin="0 0 0 4" />
+        <ColorPicker 
+            Color="{Binding Settings.TargetColor, Mode=TwoWay}" />
+    </StackPanel>
+</ci:ActionSettingsControlBase>

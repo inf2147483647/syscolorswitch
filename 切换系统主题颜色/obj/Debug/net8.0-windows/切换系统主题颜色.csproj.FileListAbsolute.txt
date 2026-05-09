@@ -1,0 +1,17 @@
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.csproj.AssemblyReference.cache
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\Avalonia\Resources.Inputs.cache
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\Avalonia\resources
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.AssemblyInfoInputs.cache
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.AssemblyInfo.cs
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.csproj.CoreCompileInputs.cache
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.dll
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\refint\切换系统主题颜色.dll
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\切换系统主题颜色.pdb
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\icon.png
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\manifest.yml
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\README.md
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\切换系统主题颜色.deps.json
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\切换系统主题颜色.dll
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\bin\Debug\net8.0-windows\切换系统主题颜色.pdb
+C:\Users\seewo\RiderProjects\切换系统主题颜色\切换系统主题颜色\obj\Debug\net8.0-windows\ref\切换系统主题颜色.dll
