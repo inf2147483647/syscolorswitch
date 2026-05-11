@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Threading.Tasks;
 using Avalonia.Media;
 namespace 切换系统主题颜色;
-
 /// <summary>
 /// 系统主题颜色帮助类，使用PowerShell修改注册表实现，确保所有颜色完整生效
 /// 兼容所有Windows版本，解决UWP和窗口边框颜色未生效的问题
+/// 优化：异步实现，避免阻塞UI线程
 /// </summary>
 internal static class SystemThemeHelper
 {
@@ -14,7 +15,7 @@ internal static class SystemThemeHelper
     /// </summary>
     /// <param name="color">目标颜色</param>
     /// <exception cref="System.ComponentModel.Win32Exception">当操作失败时抛出</exception>
-    public static void SetAccent(Color color)
+    public static async Task SetAccent(Color color)
     {
         // 计算BGR格式的颜色值
         uint bgrColor = (uint)((color.B << 16) | (color.G << 8) | color.R);
@@ -32,7 +33,6 @@ internal static class SystemThemeHelper
         
         // 把字节数组转换成PowerShell能识别的格式：@(0xXX, 0xXX, ...)
         string paletteBytes = string.Join(", ", accentPalette.Select(b => $"0x{b:X2}"));
-
         try
         {
             // 构建PowerShell命令，通过命令行修改所有注册表配置
@@ -66,7 +66,6 @@ internal static class SystemThemeHelper
                 # 重启Explorer，保证所有界面更新
                 Stop-Process -Name explorer -Force;
             ";
-
             // 启动PowerShell进程执行命令
             var process = new Process
             {
@@ -80,13 +79,13 @@ internal static class SystemThemeHelper
                     RedirectStandardError = true
                 }
             };
-
             process.Start();
-            process.WaitForExit();
-
+            // 异步等待进程退出，不阻塞UI线程
+            await process.WaitForExitAsync();
             if (process.ExitCode != 0)
             {
-                string error = process.StandardError.ReadToEnd();
+                // 异步读取错误输出
+                string error = await process.StandardError.ReadToEndAsync();
                 throw new Exception($"PowerShell命令执行失败: {error}");
             }
         }

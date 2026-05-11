@@ -7,8 +7,8 @@ id: SwitchSystemThemeColor
 name: SwitchSystemThemeColor
 description: 此功能的程序员正在植发。。。。。。
 entranceAssembly: "切换系统主题颜色.dll"
-url: https://example.com
-version: 0.0.0.0
+url: https://github.com/inf2147483647/syscolorswitch
+version: 0.0.0.1
 apiVersion: 2.0.0.0
 author: inf2147483647
 supportedPlatforms:

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("切换系统主题颜色")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0415521e283457dd4f00507dc673d994ad84734")]
 [assembly: System.Reflection.AssemblyProductAttribute("切换系统主题颜色")]
 [assembly: System.Reflection.AssemblyTitleAttribute("切换系统主题颜色")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
